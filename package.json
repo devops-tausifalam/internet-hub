@@ -1,0 +1,24 @@
+{
+  "name": "me-matrix",
+  "version": "0.0.2",
+  "description": "personal-branding",
+  "main": "index.js",
+  "scripts": {
+    "test": "run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devops-tausifalam/meMatrix.git"
+  },
+  "keywords": [
+    "portfolio",
+    "linktree",
+    "developer"
+  ],
+  "author": "Tausif Alam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devops-tausifalam/meMatrix/issues"
+  },
+  "homepage": "https://github.com/devops-tausifalam/meMatrix#readme"
+}
