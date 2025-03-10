@@ -1,0 +1,42 @@
+.user-profile {
+    display: flex;
+    gap: 15px; /* Adjust spacing instead of space-between */
+    padding: 25px;
+    max-width: 75%;
+    margin: 0 auto
+}
+
+.avatar-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensures circular shape is preserved */
+}
+
+.avatar-container img {
+    width: 100%; /* Ensures the image fills the circle */
+    height: 100%;
+    object-fit: cover; /* Prevents distortion */
+    border-radius: 50%;
+}
+
+.user-info {
+    flex: 1; /* Allows it to grow while keeping spacing */
+}
+
+.user-info .user-name {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.user-info .user-bio {
+    font-size: 12px;
+    color: #ffffff;
+    margin-top: -1px;
+}
