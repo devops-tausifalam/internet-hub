@@ -1,0 +1,24 @@
+.linkbox {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    width: 85%;
+    padding: 20px 5px;
+    margin: 20px auto;
+    border-radius: 39px;
+    overflow: hidden;
+}
+.linkbox .link-wrapper {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.linkbox .link-wrapper .link {
+    background-color: #ffffff;
+    width: 80%;
+    padding: 15px; /* Adjust as needed */
+    margin: 5px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

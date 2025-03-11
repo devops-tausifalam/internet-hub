@@ -1,10 +1,10 @@
-import "./userProfile.css";
+import "./styles/userProfile.css";
 
 export default function Userprofile() {
   return (
     <section className="user-profile">
       <div className="avatar-container">
-        <img src="./public/Assets/avatar.jpg" alt="avatar"/>
+        <img src="/Assets/avatar.jpg" alt="avatar"/>
       </div>
       <header className="user-info">
         <h2 className="user-name">Salaka Ruslan</h2>

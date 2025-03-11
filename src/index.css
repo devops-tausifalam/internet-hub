@@ -9,10 +9,13 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: url('./public/Assets/background.svg');
+  background: url(/Assets/background.svg);
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  max-height: 100vh;
   display: flex;
   justify-content: center;
 }
