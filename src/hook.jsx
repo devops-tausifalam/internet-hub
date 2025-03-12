@@ -1,4 +1,3 @@
-import './components/styles/hook.css'
 import Brand from './components/branding.jsx'
 import Userprofile from './components/user_profile.jsx'
 import Socialcapsule  from './components/capsule.jsx'
@@ -8,10 +7,10 @@ function App() {
 
   return (
     <div className='mainWrapper'>
-     <Brand/>
      <Userprofile/>
-     <Socialcapsule/>
      <Linklist/>
+     <Socialcapsule/>
+     <Brand/>
     </div>
   )
 }

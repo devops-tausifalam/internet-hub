@@ -1,6 +1,13 @@
+.abbr {
+    text-align: center;
+    line-height: 0.5;
+}
 .brandTitle {
     font-weight: 700;
-    font-size: 2em;
+    font-size: 2rem;
     color: #ffffff;
     text-align: center;
+}
+.brandTitle span {
+    font-size: 0.7rem;
 }
