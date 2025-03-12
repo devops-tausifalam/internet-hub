@@ -1,6 +1,7 @@
 .abbr {
     text-align: center;
     line-height: 0.5;
+    padding: 10px;
 }
 .brandTitle {
     font-weight: 700;
