@@ -8,12 +8,6 @@
             "url": "https://admin.profile/resume.doc"
         }
     },
-    "ticker": {
-        "isMoving": false,
-        "urlMask": true,
-        "text": "your_ticker_information",
-        "url": "https://admin.profile/ticker"
-    },
     "socials": [
         {
             "platform": "GitHub",
@@ -60,28 +54,5 @@
     ],
     "settings": {
         "bgPrefs": "cherry blossoms, good vibe, matrix, vibe, happy, programming"
-    },
-    "seo": {
-        "metaTitle": "Your Name - Personal Linktree",
-        "metaDescription": "Welcome to my personal link hub. Find my socials, portfolio, and projects all in one place.",
-        "metaKeywords": ["your name", "portfolio", "socials", "personal branding", "linktree alternative"],
-        "author": "Your Name",
-        "canonicalUrl": "https://yourwebsite.com",
-        "robots": "index, follow",
-        "favicon": "https://yourwebsite.com/assets/favicon.ico",
-        "og": {
-            "title": "Your Name - Personal Linktree",
-            "description": "Explore my links, socials, and portfolio in one place.",
-            "image": "https://yourwebsite.com/assets/og-image.jpg",
-            "url": "https://yourwebsite.com",
-            "type": "website"
-        },
-        "twitter": {
-            "card": "summary_large_image",
-            "title": "Your Name - Personal Linktree",
-            "description": "Explore my links, socials, and portfolio in one place.",
-            "image": "https://yourwebsite.com/assets/twitter-image.jpg",
-            "site": "@yourtwitterhandle"
-        }
     }
 }

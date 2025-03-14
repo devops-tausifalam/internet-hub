@@ -1,28 +1,19 @@
 import "./styles/link.css";
 import { BsThreeDotsVertical } from "react-icons/bs";
+import meta from "./meta/hook.metadata.json" with { type: "json" };
 
 export default function Linklist() {
   return (
     <div className="linkbox">
       <ul className="link-wrapper">
-        <li className="link">
-          <a href="#">My Portfolio</a>
-          <div className="hrefsymbol">
-            <BsThreeDotsVertical  className="icon"/>
-          </div>
-        </li>
-        <li className="link">
-          <a href="#">Resume</a>
-          <div className="hrefsymbol">
-            <BsThreeDotsVertical  className="icon"/>
-          </div>
-        </li>
-        <li className="link">
-          <a href="#">Instagram</a>
-          <div className="hrefsymbol">
-            <BsThreeDotsVertical  className="icon"/>
-          </div>
-        </li>
+        {meta.links.map((link, index) => (
+          <li className="link" key={index}>
+            <a href={link.url}>{link.title}</a>
+            <div className="hrefsymbol">
+              <BsThreeDotsVertical className="icon" />
+            </div>
+          </li>
+        ))}
       </ul>
     </div>
   );
