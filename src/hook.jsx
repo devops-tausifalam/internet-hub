@@ -5,7 +5,6 @@ import Socialcapsule from "./components/capsule.jsx";
 import Linklist from "./components/link.jsx";
 import Share from "./components/share.jsx";
 
-
 // import pexels for background images
 import { createClient } from "pexels";
 const pexel = createClient(import.meta.env.VITE_PEXELS_API);
