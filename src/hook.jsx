@@ -4,11 +4,11 @@ import Userprofile from "./components/user_profile.jsx";
 import Socialcapsule from "./components/capsule.jsx";
 import Linklist from "./components/link.jsx";
 import Share from "./components/share.jsx";
-
+import meta from "./components/meta/hook.metadata.json" with { type: "json" };
 // import pexels for background images
 import { createClient } from "pexels";
 const pexel = createClient(import.meta.env.VITE_PEXELS_API);
-const photo_query = "vibe, landscapes, technology, happy, aesthatic";
+const photo_query = meta.settings.bgPrefs; // import user prefernce from hook.metadata.json
 
 const device_orientation = () => {
   return window.matchMedia("(orientation: portrait)").matches
@@ -29,11 +29,12 @@ pexel.photos
       const random_index = Math.floor(Math.random() * resp.photos.length); // integer +ve index for random images
       const selectedPhoto = resp.photos[random_index];
       document.body.style.backgroundImage = `url(${selectedPhoto.src.original})`;
-
+      // show the main page after loading background image successfully
       const attribution = document.querySelector('.pexel_attr p');
       if (attribution) {
         attribution.innerHTML =  `Photo by <a href="${selectedPhoto.photographer_url}" target="_blank">${selectedPhoto.photographer}</a>`;
       }
+      document.querySelector(".mainWrapper").hidden = false;
     }
   })
   .catch((error) => {
@@ -42,7 +43,7 @@ pexel.photos
 
 function App() {
   return (
-    <div className="mainWrapper">
+    <div className="mainWrapper" hidden>
       <Share />
       <div className="appInner">
         <Userprofile />
