@@ -8,7 +8,7 @@ export default function Linklist() {
       <ul className="link-wrapper">
         {meta.links.map((link, index) => (
           <li className="link" key={index}>
-            <a href={link.url}>{link.title}</a>
+            <a href={link.url} target="_blank">{link.title}</a>
             <div className="hrefsymbol">
               <BsThreeDotsVertical className="icon" />
             </div>
