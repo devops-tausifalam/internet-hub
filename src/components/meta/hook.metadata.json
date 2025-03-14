@@ -1,8 +1,8 @@
 {
     "profile": {
-        "name": "admin_name",
-        "bio": "admin_bio",
-        "avatar": "https://admin.profile/avatar.image",
+        "name": "Tausif Alam",
+        "bio": "Analyze. Code. Deploy.",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2t3bgawnjqidwbhyh3qskg44/bafkreicidi46m5uq7plspvkrkwyt5giv4bi6ymwhekkhasx6fuq4sy6za4@jpeg",
         "callToAction": {
             "title": "btn_title",
             "url": "https://admin.profile/resume.doc"
@@ -42,12 +42,12 @@
             "icon": "https://yourwebsite.com/assets/portfolio-icon.svg"
         },
         {
-            "title": "Blog",
+            "title": "Merch",
             "url": "https://yourblog.com",
             "icon": "https://yourwebsite.com/assets/blog-icon.svg"
         },
         {
-            "title": "Resume",
+            "title": "Blog",
             "url": "https://yourwebsite.com/resume.pdf",
             "icon": "https://yourwebsite.com/assets/resume-icon.svg"
         }

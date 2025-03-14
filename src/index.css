@@ -20,5 +20,5 @@ body {
   justify-content: center;
 }
 #root {
-  max-width: 425px;
+  width: clamp(320px, 50%, 425px);
 }

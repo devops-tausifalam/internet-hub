@@ -1,15 +1,16 @@
 import "./styles/userProfile.css";
+import meta from "./meta/hook.metadata.json" with {type: "json"}
+
 
 export default function Userprofile() {
   return (
     <section className="user-profile">
       <div className="avatar-container">
-        <img src="/Assets/avatar.jpg" alt="avatar"/>
+        <img src={meta.profile.avatar} alt="avatar"/>
       </div>
       <header className="user-info">
-        <h2 className="user-name">Salaka Ruslan</h2>
-        <p className="user-bio">I code to solve problems and explore Calculus, Physics, and Social Science. 
-        A lifelong learner, always evolving.</p>
+        <h2 className="user-name">{meta.profile.name}</h2>
+        <p className="user-bio">{meta.profile.bio}</p>
       </header>
     </section>
   );
