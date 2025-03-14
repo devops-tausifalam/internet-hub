@@ -1,0 +1,24 @@
+.appInner {
+    margin-top: 50px;
+}
+.pexel_attr {
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
+}
+@media  screen and (orientation: portrait) {
+    .pexel_attr {
+        top: 100%
+    }
+}
+.pexel_attr p {
+    font-size: 12px;
+    color: #ffffff;
+}
+.pexel_attr p a {
+    color: #ffffff;
+    font-weight: 700;
+}

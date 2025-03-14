@@ -33,14 +33,14 @@
 
 .user-info .user-name {
     font-size: 1.2rem;
-    color: #000000;
+    color: #ffffff;
     margin: 0;
     text-align: center;
 }
 
 .user-info .user-bio {
     font-size: 0.9rem;
-    color: #000000;
+    color: #ffffff;
     text-align: center;
     margin-top: -1px;
 }
