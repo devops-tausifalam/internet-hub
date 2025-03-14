@@ -25,11 +25,19 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.linkbox .link-wrapper .link:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: #ffffff;
 }
 .linkbox .link-wrapper .link a {
     text-decoration: none;
     color: #000000;
     font-size: 1rem;
+}
+.linkbox .link-wrapper .link:hover a {
+    color: #ffffff;
 }
 .linkbox .link-wrapper .link a:hover {
     cursor: pointer;
