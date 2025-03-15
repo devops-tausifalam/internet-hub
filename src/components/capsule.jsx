@@ -1,4 +1,4 @@
-import "./styles/capsule.css";
+import "./styles/capsule.scss";
 import { MdEmail } from "react-icons/md";
 import { FaBluesky, FaLinkedin, FaGithub } from "react-icons/fa6";
 

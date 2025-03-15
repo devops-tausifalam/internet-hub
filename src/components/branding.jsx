@@ -1,4 +1,4 @@
-import './styles/branding.css'
+import './styles/branding.scss'
 
 export default function Brand() {
     return (

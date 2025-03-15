@@ -1,4 +1,4 @@
-import "./styles/userProfile.css";
+import "./styles/userProfile.scss";
 import meta from "./meta/hook.metadata.json" with {type: "json"}
 
 

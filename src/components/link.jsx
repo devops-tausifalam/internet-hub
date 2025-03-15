@@ -1,4 +1,4 @@
-import "./styles/link.css";
+import "./styles/link.scss";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import meta from "./meta/hook.metadata.json" with { type: "json" };
 

@@ -1,4 +1,4 @@
-import "./styles/share.css";
+import "./styles/share.scss";
 import { MdOutlineIosShare } from "react-icons/md";
 
 export default function Share() {

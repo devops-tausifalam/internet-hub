@@ -1,4 +1,4 @@
-import './components/styles/hook.css';
+import './components/styles/hook.scss';
 import Brand from "./components/branding.jsx";
 import Userprofile from "./components/user_profile.jsx";
 import Socialcapsule from "./components/capsule.jsx";
