@@ -34,6 +34,7 @@ pexel.photos
       img.onload = () => {
         document.body.style.setProperty("--bg-image", `url(${selectedPhoto.src.original})`);
         document.body.classList.add("bg-loaded"); // Trigger fade-in effect
+        document.getElementById("root").classList.add("show"); // Fade in
       }
 
       // show the main page after loading background image successfully

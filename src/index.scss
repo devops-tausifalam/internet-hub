@@ -9,7 +9,6 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: none;
   height: 100vh;
   max-height: 100vh;
   display: flex;
@@ -37,5 +36,13 @@ body.bg-loaded::before {
   opacity: 1;
 }
 #root {
+  opacity: 0;
+  visibility: hidden;
   width: clamp(320px, 50%, 425px);
+  transition: display 0.7s ease-in, visibility 0.7s ease-in;
+}
+/* When ready, show the element */
+#root.show {
+  opacity: 1;
+  visibility: visible;
 }
