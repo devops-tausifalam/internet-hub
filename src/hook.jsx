@@ -28,7 +28,14 @@ pexel.photos
     if (resp.photos && resp.photos.length > 0) {
       const random_index = Math.floor(Math.random() * resp.photos.length); // integer +ve index for random images
       const selectedPhoto = resp.photos[random_index];
-      document.body.style.backgroundImage = `url(${selectedPhoto.src.original})`;
+
+      const img = new Image();
+      img.src = selectedPhoto.src.original;
+      img.onload = () => {
+        document.body.style.setProperty("--bg-image", `url(${selectedPhoto.src.original})`);
+        document.body.classList.add("bg-loaded"); // Trigger fade-in effect
+      }
+
       // show the main page after loading background image successfully
       const attribution = document.querySelector('.pexel_attr p');
       if (attribution) {
