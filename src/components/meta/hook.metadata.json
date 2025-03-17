@@ -8,33 +8,25 @@
             "url": "https://admin.profile/resume.doc"
         }
     },
-    "socials": [
-        {
-            "platform": "GitHub",
-            "url": "https://github.com/yourusername",
-            "icon": "https://yourwebsite.com/assets/github.svg"
-        },
-        {
-            "platform": "Twitter",
-            "url": "https://twitter.com/yourusername",
-            "icon": "https://yourwebsite.com/assets/twitter.svg"
-        },
-        {
-            "platform": "LinkedIn",
-            "url": "https://linkedin.com/in/yourusername",
-            "icon": "https://yourwebsite.com/assets/linkedin.svg"
-        },
-        {
-            "platform": "Instagram",
-            "url": "https://instagram.com/yourusername",
-            "icon": "https://yourwebsite.com/assets/instagram.svg"
-        },
-        {
-            "platform": "Website",
-            "url": "https://yourwebsite.com",
-            "icon": "https://yourwebsite.com/assets/website.svg"
-        }
-    ],
+        "socials": [
+            {
+                "platform": "GitHub",
+                "url": "https://github.com/yourusername"
+            },
+            {
+                "platform": "bluesky",
+                "url": "https://bsky.app/yourusername"
+            },
+            {
+                "platform": "LinkedIn",
+                "url": "https://linkedin.com/in/yourusername"
+            },
+            {
+                "platform": "envelope",
+                "url": "mailto:user@admin.com"
+            }
+        ],
+    
     "links": [
         {
             "title": "Portfolio",

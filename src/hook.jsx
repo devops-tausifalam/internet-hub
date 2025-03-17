@@ -58,11 +58,10 @@ function App() {
         <Linklist />
         <Socialcapsule />
         <Brand />
-      </div>
-
-      <div className="pexel_attr">
+        <div className="pexel_attr">
         {/* from above pexel client function */}
         <p></p>
+      </div>
       </div>
     </div>
   );
