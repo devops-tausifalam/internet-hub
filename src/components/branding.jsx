@@ -7,3 +7,13 @@ export default function Brand() {
     </div>
     );
 }
+
+export function brandingForPages() {
+    return (
+        <div className="pagebranding">
+            <p className="brndtitle">
+                hooks.
+            </p>
+        </div>
+    )
+}
