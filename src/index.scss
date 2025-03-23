@@ -20,7 +20,6 @@ body {
   background-attachment: fixed;
   transition: opacity 1.5s ease-in-out; /* Smooth fade-in */
   background-image: var(--bg-image); /* Use CSS variable */
-  overflow: hidden;
 }
 /* When the background is loaded, make it visible */
 body.bg-loaded {
