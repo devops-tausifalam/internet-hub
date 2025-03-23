@@ -1,6 +1,6 @@
 import "./styles/share.scss";
 import { RiFlag2Line } from "react-icons/ri";
-import { MdOutlineIosShare, MdOutlineClose } from "react-icons/md";
+import { MdOutlineIosShare, MdOutlineClose, MdOutlineContentCopy } from "react-icons/md";
 // common social icons
 import { FaSnapchatGhost } from "react-icons/fa";
 import {
@@ -23,7 +23,8 @@ export function Share({ onClick }) {
     <>
       <div className="sharebtn">
         <button onClick={onClick}>
-          <MdOutlineIosShare className="icon" />
+          share
+          {/* <MdOutlineIosShare className="icon" /> */}
         </button>
       </div>
     </>
@@ -31,6 +32,14 @@ export function Share({ onClick }) {
 }
 
 export function ShareMenu({ onClose }) {
+
+  // universal share code (USC)
+  /*
+      The USC generated sessionID for users and encapsulate all into
+      UTM-source and creates a shareable URL for client to share.
+  */
+
+
   return (
     <>
       <div className="sharemenu">
@@ -90,8 +99,8 @@ export function ShareMenu({ onClose }) {
                   <FaEnvelope className="icon" />
                   <span className="icon-label">Email</span>
                 </button>
-                <button className="primarySharebtn">
-                  <span className="icon-label">more</span>
+                <button className="clipboardbtn">
+                  <span className="icon-label">copy to clipboard</span>
                 </button>
               </div>
           </div>
