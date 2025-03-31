@@ -28,6 +28,25 @@ export default function Linklist() {
     }
   };
 
+  function share_compo(link) {
+       // Check if link exists
+        if (!link) {
+          console.error('Link not found');
+          return;
+        }
+      // check if Web Share API is supported
+      if (navigator.share) {
+        console.log(meta.profile.name)
+        navigator.share({
+          title: "I've found a great hook, checkout here,",
+          text:  `${meta.profile.name}'s  ${link.title}`,
+          url: link.url
+        })
+        .catch((error) => console.error('error sharing:', error));
+      } else {
+        alert("Web Share API not supported on this browser. Try copying the link manually.");
+      }
+  }
 
   return (
     <div className="linkbox">
@@ -40,7 +59,7 @@ export default function Linklist() {
               <div className={`shareto-menu ${activeMenu === index ? "active" : ""}`}>
                 <ul>
                   <li>
-                    <button>
+                    <button onClick={() =>  share_compo(link) }>
                       <IoMdShareAlt /> share
                     </button>
                   </li>
